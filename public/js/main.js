@@ -8,6 +8,7 @@ $(document).ready(function() {
         var parsedData = JSON.parse(data);
         var template = $("#post-template").text();
         parsedData.forEach(function(post){
+            post.url = post.url +" target='_blank'"
             var html = Mustache.render(template, post);
             $("#recent-posts").append(html);
         });
