@@ -1,0 +1,19 @@
+a ,
+.profile-info ul li span a:hover ,
+.services-content:hover i {
+	color: #85C611;
+}
+
+.sidebar-nav li a:hover ,
+.skill-bar span ,
+#education ,
+#services ,
+#cta-wrap {
+	background: #85C611;
+}
+
+.folio-filter li a:hover, .folio-filter li a.selected {
+	color: #85C611;
+	border: 1px solid #85C611;
+}
+

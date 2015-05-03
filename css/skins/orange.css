@@ -1,0 +1,51 @@
+a ,
+.profile-info ul li span a:hover ,
+.services-content:hover i {
+    color: #eb4e01;
+}
+
+.sidebar-nav li a:hover ,
+.skill-bar span ,
+#education ,
+#services ,
+#cta-wrap {
+    background: #eb4e01;
+}
+
+.folio-filter li a:hover, .folio-filter li a.selected {
+    color: #eb4e01;
+    border: 1px solid #eb4e01;
+}
+
+#cta-wrap h3 ,
+.service-content h4 ,
+.services-content i ,
+.service-content h2 ,
+.edu-content ul li h3 ,
+.edu-content ul li p ,
+.edu-content ul li h4 ,
+#education h2 {
+    color: #fff;
+}
+
+.edu-content ul li h3 {
+    border-bottom: 1px solid #fff;
+}
+
+#cta-wrap a {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#cta-wrap a:hover {
+    background: #fff;
+    color: #eb4e01;
+}
+
+.services-content:hover {
+    background: rgba(0,0,0,0.4);
+}
+
+.services-content:hover i {
+    color: #fff;
+}
