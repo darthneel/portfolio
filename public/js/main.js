@@ -1,10 +1,24 @@
 $(document).ready(function() {
     "use strict";
 
+    $.ajax({
+        type: 'GET',
+        url: '/fetchposts'
+    }).done(function(data){
+        var parsedData = JSON.parse(data);
+        var template = $("#post-template").text();
+        parsedData.forEach(function(post){
+            console.log(post);
+            console.log(template);
+            var html = Mustache.render(template, post);
+            $("#recent-posts").append(html);
+        });
+    });
+
     // Typing intro
     $(".cw-inner h1 span").typed({
-      strings: ["Web Developer / Consultant / Educator"],
-      typeSpeed: 20
+        strings: ["Web Developer / Consultant / Educator"],
+        typeSpeed: 20
     });
 
     // Smooth Scroll Easing

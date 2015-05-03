@@ -41,6 +41,15 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<script id="post-template" type="text/template">
+		<div class="col-md-3 col-sm-6 blog-content">
+			<img src={{ image }} class="img-responsive" alt=""/>
+			<h4><a href={{ url }}>{{ title }}</a></h4>
+			<p>{{ subheading }}</p>
+			<a href={{ url }} class="rmore">Read More <i class="icon-arrow-right"></i></a>
+		</div>
+	</script>
+
 </head>
 
 <body id="page-top" class="index">
@@ -334,8 +343,8 @@
 						<div class="content-head content-head-lite">
 							<h2>Latest From the Blog <span>Lorem ipsum dolor sit amet adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis. Mauris in erat augue. Fusce sed pretium erat, sit amet elementum ipsum.</span></h2>
 						</div>
-						<div class="row">
-							<div class="col-md-3 col-sm-6 blog-content">
+						<div id="recent-posts" class="row">
+							<!-- div class="col-md-3 col-sm-6 blog-content">
 								<img src="images/blog/1.jpg" class="img-responsive" alt=""/>
 								<h4><a href="#">The old typewriter</a></h4>
 								<div class="post-meta"><span><i class="icon-head"></i> Admin</span> <span><i class="icon-speech-bubble"></i> 2 Comments</span></div>
@@ -362,7 +371,7 @@
 								<div class="post-meta"><span><i class="icon-head"></i> Admin</span> <span><i class="icon-speech-bubble"></i> 2 Comments</span></div>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget lectus a dolor imperdiet iaculis.</p>
 								<a href="#" class="rmore">Read More <i class="icon-arrow-right"></i></a>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -450,6 +459,7 @@
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
 <script src="js/typed.js"></script>
+<script src="js/mustache.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/isotope/isotope.pkgd.js"></script>
