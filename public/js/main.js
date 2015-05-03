@@ -8,8 +8,6 @@ $(document).ready(function() {
         var parsedData = JSON.parse(data);
         var template = $("#post-template").text();
         parsedData.forEach(function(post){
-            console.log(post);
-            console.log(template);
             var html = Mustache.render(template, post);
             $("#recent-posts").append(html);
         });
@@ -117,7 +115,7 @@ $(document).ready(function() {
             $(form).ajaxSubmit({
                 type: "POST",
                 data: $(form).serialize(),
-                url: "php/contact.php",
+                url: "/sendemail",
                 success: function() {
                     $('#contact :input').attr('disabled', 'disabled');
                     $('#contact').fadeTo("slow", 0.15, function() {
