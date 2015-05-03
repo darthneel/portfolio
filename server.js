@@ -6,9 +6,6 @@ var bodyParser = require('body-parser');
 var config = require('./config.js');
 var sendgrid  = require('sendgrid')(config.api_user, config.api_key);
 
-
-require('locus');
-
 var app = express();
 
 app.use(express.static(__dirname + '/public'));
