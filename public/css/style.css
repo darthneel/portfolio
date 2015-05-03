@@ -180,7 +180,9 @@ a:focus {
 	height: 100%;
 	margin-right: -350px;
 	overflow-y: auto;
-	background: #222 url(../images/profile1.png) no-repeat center bottom;
+	/*background: #222 url(../img/rays.jpg) no-repeat center bottom;*/
+	/*background-color: black;*/
+	background-color: #171A1C;
 	-webkit-transition: all 0.4s ease 0s;
 	-moz-transition: all 0.4s ease 0s;
 	-ms-transition: all 0.4s ease 0s;
